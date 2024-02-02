@@ -1,0 +1,25 @@
+extends layout 
+
+block content 
+ center
+  form(action='/register' method='POST')
+    table
+      tr
+        td
+          input.brii(type='text' name='first_name' placeholder='ENTER FIRST NAME' required='')
+      tr
+        td
+          input.brii(type='text' name='last_name' placeholder='ENTER LAST NAME' required='')
+      tr
+        td
+          input.brii(type='email' name='email' placeholder='ENTER EMAIL ADDRESS' required='')
+      tr
+        td
+          input.brii(type='text' name='reg_no' placeholder='ENTER REGISTRATION NUMBER' required='')
+      tr
+        td
+          input.chengs(type='tel' name='phone_number' placeholder='ENTER PHONE NUMBER' required='')
+      tr
+        td
+          input.basso(type='password' name='password' placeholder='ENTER PASSWORD' required='')
+  input.dorah(type='submit' value='LOG IN')

@@ -1,0 +1,23 @@
+extends layout 
+
+
+block content 
+ center
+  form(action='/staff' method='POST')
+    table
+      tr
+        td
+          input.brii(type='text' name='first_name' placeholder='ENTER FIRST NAME' required='')
+      tr
+        td
+          input.brii(type='text' name='last_name' placeholder='ENTER LAST NAME' required='')
+      tr
+        td
+          input.brii(type='email' name='email' placeholder='ENTER EMAIL' required='')
+      tr
+        td
+          input.brii(type='tel' name='phone_number' placeholder='ENTER PHONE NUMBER' required='')
+      tr
+        td
+          input.chengs(type='password' name='password' placeholder='PASSWORD' required='')
+  input.dorah(type='submit' value='LOG IN')
