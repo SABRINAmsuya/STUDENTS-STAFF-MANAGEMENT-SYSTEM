@@ -28,3 +28,6 @@ app.use(express.urlencoded({extended: true}))
 
 app.use("/staff", staffRouter);
 
+app.get('/contact', function (req, res) { // Fix parentheses to curly braces
+    res.render('contact');
+});
